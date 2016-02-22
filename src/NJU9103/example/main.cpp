@@ -1,6 +1,6 @@
 #include "mbed.h"
 
-#include "NJU9103/NJU9103.h"
+#include "../NJU9103.h"
 
 using namespace NewJapanRadio;
 
