@@ -52,8 +52,7 @@ void NJU9103::get_adcdata(int16_t *adcdata, bool chop) {
     if (chop) {
         mode = CTRL_MODE_SINGLE_CHOP_CONVERSION;
     }
-    else
-    {
+    else {
         mode = CTRL_MODE_SINGLE_CONVERSION;
     }
     uint8_t wd = CTRL_CHSEL_INP_INN | mode;
