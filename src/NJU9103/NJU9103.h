@@ -1,7 +1,7 @@
 #ifndef __NJU9103_H__
 #define __NJU9103_H__
 
-#include <mbed.h>
+#include "mbed.h"
 
 namespace NewJapanRadio {
     class NJU9103 {
