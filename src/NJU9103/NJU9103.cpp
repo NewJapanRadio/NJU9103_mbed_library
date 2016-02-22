@@ -43,19 +43,25 @@ void NJU9103::get_adcdata(int16_t *adcdata, bool chop) {
     uint8_t rd[2] = { 0x00, 0x00 };
     // wait for boot
     this->read(NJU9103::CTRL, rd, 1);
-    while ((rd[0] & 0x0F) == 0x0F) {
+    while ((rd[0] & 0x0F) == CTRL_MODE_BOOT) {
         this->read(NJU9103::CTRL, rd, 1);
     }
 
     // CHSEL:INP/INN, MODE:Single Conversion
-    uint8_t chsel = 0x00;
-    uint8_t mode = chop ? 0x04 : 0x02;
-    uint8_t wd = (chsel << 4) | mode;
+    uint8_t mode;
+    if (chop) {
+        mode = CTRL_MODE_SINGLE_CHOP_CONVERSION;
+    }
+    else
+    {
+        mode = CTRL_MODE_SINGLE_CONVERSION;
+    }
+    uint8_t wd = CTRL_CHSEL_INP_INN | mode;
     this->write(NJU9103::CTRL, &wd, 1);
 
     // wait for end of conversion
     this->read(NJU9103::CTRL, rd, 1);
-    while ((rd[0] & 0x80) != 0x00) {
+    while ((rd[0] & 0x80) == CTRL_RDYB_BUSY) {
         this->read(NJU9103::CTRL, rd, 1);
     }
 
