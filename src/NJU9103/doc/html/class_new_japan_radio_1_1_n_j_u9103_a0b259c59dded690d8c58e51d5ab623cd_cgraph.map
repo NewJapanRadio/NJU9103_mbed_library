@@ -1,0 +1,4 @@
+<map id="NewJapanRadio::NJU9103::get_adcdata" name="NewJapanRadio::NJU9103::get_adcdata">
+<area shape="rect" id="node2" href="$class_new_japan_radio_1_1_n_j_u9103.html#ab570cbc5c567f812aba22fc6b04a83fd" title="Read register via SPI. " alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="$class_new_japan_radio_1_1_n_j_u9103.html#a962db0d392118b6e0ab5df39001b3299" title="Write register via SPI. " alt="" coords="228,71,403,112"/>
+</map>

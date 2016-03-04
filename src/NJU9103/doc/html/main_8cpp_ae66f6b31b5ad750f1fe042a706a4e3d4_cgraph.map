@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_new_japan_radio_1_1_n_j_u9103.html#a92cb5a6e492dbe269211bfaf8903f4a0" title="Reset NJU9103 via SPI. " alt="" coords="104,5,279,47"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a091f8e8f031b31038f4453d6b17daf1c" title="serial" alt="" coords="165,71,218,98"/>
+<area shape="rect" id="node4" href="$class_new_japan_radio_1_1_n_j_u9103.html#a962db0d392118b6e0ab5df39001b3299" title="Write register via SPI. " alt="" coords="327,115,501,156"/>
+<area shape="rect" id="node5" href="$class_new_japan_radio_1_1_n_j_u9103.html#a0b259c59dded690d8c58e51d5ab623cd" title="Get ADC conversion data. " alt="" coords="104,173,279,215"/>
+<area shape="rect" id="node6" href="$class_new_japan_radio_1_1_n_j_u9103.html#ab570cbc5c567f812aba22fc6b04a83fd" title="Read register via SPI. " alt="" coords="327,180,501,221"/>
+</map>
